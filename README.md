@@ -1,6 +1,6 @@
 # nuxt-coral-template
 
-> My funkadelic Nuxt.js project
+> Nuxt.js project using coral-ui:  https://github.com/msi89/coral-ui 
 
 ## Build Setup
 
