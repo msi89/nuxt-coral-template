@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+a,
+a:hover,
+a:focus,
+a:visited {
+  text-decoration: none;
+  color: #444444;
+}
+
+.layout {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  flex-direction: row;
+}
+.sidebar {
+  width: 280px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  background: #f9f9f9;
+  color: #999;
+  overflow-y: auto;
+  transition: all 0.3s;
+}
+.sidebar .active {
+  margin-left: 280px;
+}
+.main {
+  width: calc(100% - 280px);
+  height: 100%;
+  overflow-y: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.main .active {
+  width: 100%;
+}
+.header {
+  position: fixed;
+  height: 55px;
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+}
+.header .brand {
+  width: calc(100vw - 130px);
+  height: 55px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+}
+.header .navbar {
+  padding: 6px 0px;
+  width: 130px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}
+.header .navbar .material-icons {
+  font-size: 16px;
+}
+.content {
+  padding: 0px;
+  margin-top: 55px;
+  width: calc(100% - 0px);
+  height: calc(100% - 55px);
+  background: bgk-primary;
+  overflow: auto;
+}
+
+#btn_toogle_sidebar {
+  display: none;
+}
+@media screen and (max-width: 760px) {
+  #btn_toogle_sidebar {
+    display: flex;
+  }
+  .sidebar {
+    position: fixed;
+    margin-left: -280px;
+    height: 100vh;
+    z-index: 999;
+  }
+  .sidebar.active {
+    margin-left: 0;
+  }
+  .main {
+    width: 100%;
+  }
+  .main.active {
+    width: calc(100% - 280px);
+  }
+}
+table {
+  border-collapse: collapse;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 998;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.overlay.active {
+  display: block;
+  opacity: 1;
+}
+.menu .menu-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 58px;
+}
+.menu .menu-header-title {
+  font-size: 25px;
+  color: #fff;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,223 @@
+/* BUTTON */
+
+.group-button {
+  display: table;
+  width: 100%;
+  margin: 10px 0px;
+}
+.group-button.inline {
+  display: flex;
+  flex-direction: row;
+}
+.group-button.right {
+  justify-content: flex-end;
+}
+.group-button.center {
+  justify-content: center;
+}
+.button {
+  min-width: 60px;
+  min-height: 25px;
+  padding: 10px 10px;
+  margin: 1px 5px;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+  color: #666;
+  border-radius: 0.25em;
+  transition: color 0.3s;
+}
+.button:hover {
+  background-color: #f1f1f1;
+  color: #34495e;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+  // border: 1px solid #ccc;
+}
+.btn-primary {
+  border: 1px solid $color-primary;
+  color: #fff;
+  background: $color-primary;
+  transition: all $animate_time;
+}
+.btn-primary:hover {
+  color: #f9f9f9;
+  background: $color-primary;
+  opacity: 0.8;
+}
+.btn-primary-light {
+  border: 1px solid $color-primary;
+  color: $color-primary;
+  background: transparent;
+  transition: all $animate_time;
+}
+.btn-primary-light:hover {
+  background-color: $color-primary;
+  color: #f9f9f9;
+}
+// button succes
+.btn-success {
+  border: 1px solid $color-success-dark;
+  color: #fff;
+  background: $color-success;
+  transition: all $animate_time;
+}
+.btn-success:hover {
+  color: #fff;
+  background: $color-success;
+  opacity: 0.8;
+}
+.btn-success-light {
+  border: 1px solid $color-success;
+  color: $color-success;
+  background: none;
+  transition: all $animate_time;
+}
+.btn-success-light:hover {
+  background-color: $color-success;
+  color: #f9f9f9;
+}
+// button danger
+.btn-danger {
+  border: 1px solid $color-error-dark;
+  color: #fff;
+  background: $color-error;
+  transition: all $animate_time;
+}
+
+.btn-danger:hover {
+  color: #fff;
+  background: $color-error;
+  opacity: 0.8;
+}
+.btn-danger-light {
+  border: 1px solid $color-error;
+  color: $color-error;
+  background: transparent;
+  transition: all $animate_time;
+}
+.btn-danger-light:hover {
+  background-color: $color-error;
+  color: #f9f9f9;
+}
+// button warning
+.btn-warning {
+  border: 1px solid $color-warning-dark;
+  color: #fff;
+  background: $color-warning;
+  transition: all $animate_time;
+}
+.btn-warning:hover {
+  color: #fff;
+  background: $color-warning;
+  opacity: 0.8;
+}
+.btn-warning-light {
+  border: 1px solid $color-warning;
+  color: $color-warning;
+  background: transparent;
+  transition: all $animate_time;
+}
+.btn-warning-light:hover {
+  background-color: $color-warning;
+  color: #f9f9f9;
+}
+// button info
+.btn-info {
+  border: 1px solid $color-info-dark;
+  color: #fff;
+  background: $color-info;
+  transition: all $animate_time;
+}
+.btn-info:hover {
+  color: #fff;
+  background: $color-info;
+  opacity: 0.8;
+}
+.btn-info-light {
+  border: 1px solid $color-info;
+  color: $color-info;
+  background: transparent;
+  transition: all $animate_time;
+}
+.btn-info-light:hover {
+  background-color: $color-info;
+  color: #f9f9f9;
+}
+
+.clear {
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  vertical-align: baseline;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+  border: none;
+  padding-bottom: 2px;
+}
+// CLEAR BUTTON
+.clear:focus {
+  outline: none;
+}
+.clear:hover {
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.btn_icon {
+  margin: 0px 5px;
+  background: transparent;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.btn_icon:active {
+  background: rgba(255, 225, 255, 0.1);
+}
+.btn_icon.bubble::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 0;
+    background-color: $color-primary;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+.nav_btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  transition: background 0.3s;
+}
+.nav_btn:active {
+  background: rgba(0, 0, 0, 0.2);
+}
+.nav_btn.bubble::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 0;
+    background-color: $color-primary;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+.nav_btn.has-color{
+  background: rgba(0, 0, 0, 0.1);
+}
+.material-icons {
+  font-size: 24px;
+}
